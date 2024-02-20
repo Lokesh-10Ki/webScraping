@@ -1,0 +1,341 @@
+<form name="form" method="post" action="ErrorPage.aspx?aspxerrorpath=/CadoInternet/Company/CompanyNameNumberSearch.aspx" id="form">
+<input type="hidden" name="__VIEWSTATE" value="RiCZaMk+ClSEbHVJdu62MfgYtk0WvzEaPH6OJY4IdhsVtYCQ7IUiMS/f0fpSpkiAmTixNOd/XiQAOjdUzpWQpAz9NntJ+AdCJfY2c4GXKF39cAH596wq+k8oSRJHuOZ6c8YAeqjQBlChPFywi+TSmiX4te94GcbRCzkKB+7GSjHnjPeoNw4/jvBuEPR4vmTzuiRaBu12hje1XaFM8Do8HCoGChqb/1VaRBJ+mVAf56AE7kkTz2vk6un0BmXnJTx9DkUlnxBdTJQmZqQ/XQQyrK4QF2dTcB/tlGDTT6VW7FEiM/siapZWGkEym4M73mF0LApjvCu+wgToRA088SpXBd00NyEBVtW7hCJ0CC0F+4gQrz36CEtjTgkHSBWc0/EyGD9R/A018a6dG2rpVLK0cg0DFM04Wphly6C95zjmWdmzZ1Ghhtdsd33b2tcZ1Uz7q2YGJUnW6zHhOiUD7WAtyuRzES4aKpB8wxz6G5c+ZKl+IA0xA6/7T1bOQmU/Svn0o08uAer2lcVNeL3C/wEq44PHzt5JuxgTziW++jkrp2F+oHTVaD2pAwvZMrq9/6kPted4QFGE0zh2F3jsf70Ew4rkXLkIJqSVrJOrK/HOEm9Mxb4hR0ugVTm/bZYUIJXFyZBQ5EUy052xFvyg9iqPTNZ/ChjSZqaRnEhiNTxBMgM2McH7TOKIAgptFP1UZp1o1gZR1UkPOGtM/767jWfWbdLSOoioVPiODkZTEhks5MxImjvc22lRCs5BDQHMFOs7g6NvefuBuuMKR881Px9qrd9wBjPZU/VDrnFPLEFAvBRmsYAS9uoAgQzFLtApH9jXLp+IMtEfVPfqKdC2v2xBYiNJsv+q1jf/vkAj/Sy8p6MJMBKTDNAhAhj+ebbUWI6gT2vBeSRJ3oe52phAXyAHf8qTwfvZpCKSwQZHFyJYwQOozro9G5/45+5TonLmTlT0GFGEo/C2B4p+MJQAQMyMhloWFodCJReTFIxxsVa++7j/ALdez0SRIvZdFjI+voSl6nE9gstfQwU=" />
+	<SCRIPT>alert('An error occurred, please contact your System Administrator');</SCRIPT>
+
+
+	
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->  
+<!--[if IE 7 ]><![endif]--> <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->  
+<!--[if (gte IE 9)|!(IE)]><!-->
+	<html lang="en">
+<!--<![endif]-->
+	<HEAD id="Head1">
+		<title>CADO - Companies and Deeds Online</title> 
+		
+			<!-- Basic Page Needs
+  ================================================== -->
+			<!--MPM Fix for IE11 compat prob -->
+			<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+			<meta charset="utf-8">
+			<!-- Do we really need this stuff? -->
+			<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+			<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
+			<meta content="JavaScript" name="vs_defaultClientScript">
+			<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+			<LINK href="/CadoInternet/Styles.css" type=text/css rel=stylesheet>
+			<link href="/CadoInternet/TemplateCSS-JS/gnlscreen.css" rel="stylesheet" type="text/css" media="screen" >
+			<script>
+			//var childWindow = false;
+			
+			var alreadySubmitted = false;
+			
+			function popUpWindow(sTarget, bModal, bCenter, iWidth, iHeight, bScroll){
+				// Browser Detection
+				var IE4plus = (document.all) ? true : false;
+				
+				//Window size is max 640x480
+				//if (iWidth > 640 || iWidth < 0) iWidth = 640;
+				//if (iHeight > 480 || iHeight < 0) iHeight = 480;
+			
+				if (IE4plus && bModal)
+				{
+					// Window properties
+					var sEdge = 'Raised' //Sunken || Raised
+					
+					var sFeatures='dialogHeight: ' + iHeight + 'px; dialogWidth: ' + iWidth + 'px; dialogTop: ' + iTop + 'px; dialogLeft: ' + iLeft + 'px; edge: ' + sEdge + '; center: ' + bCenter + '; help: no; resizable: yes; status: no; scroll: yes;';
+					
+					window.showModalDialog(sTarget, '', sFeatures);
+				}
+				else
+				{
+					// Center window dimensions for non-IE4+
+					if (bCenter)
+					{
+						var iLeft = (screen.width - iWidth) / 2;
+						var iTop = (screen.height - iHeight) / 2;
+					}
+					else
+					{
+						var iLeft = '';
+						var iTop = '';
+					}
+					
+					scrollBars = ',scrollbars=yes';
+					
+					if (bScroll == false){
+						scrollBars = '';
+					}
+													
+					msg=window.open(sTarget,'popUpWindow','width=' + iWidth + ',height=' + iHeight + ',left=' + iLeft + ',top=' + iTop + scrollBars + ',status=no');
+					
+					if (!popUpWindow.opener) popUpWindow.opener = self;
+				}
+			}
+			
+			function LibertyWindow(sTarget, bModal, bCenter, iWidth, iHeight, bScroll){
+				// Browser Detection
+				var IE4plus = (document.all) ? true : false;
+				
+				//Window size is max 640x480
+				if (iWidth > 780 || iWidth < 0) iWidth = 780;
+				if (iHeight > 550 || iHeight < 0) iHeight = 550;
+			
+				if (IE4plus && bModal)
+				{
+					// Window properties
+					var sEdge = 'Raised' //Sunken || Raised
+					
+					var sFeatures='dialogHeight: ' + iHeight + 'px; dialogWidth: ' + iWidth + 'px; dialogTop: ' + iTop + 'px; dialogLeft: ' + iLeft + 'px; edge: ' + sEdge + '; center: ' + bCenter + '; help: no; resizable: yes; status: no; scroll: yes;';
+					
+					window.showModalDialog(sTarget, '', sFeatures);
+				}
+				else
+				{
+					// Center window dimensions for non-IE4+
+					if (bCenter)
+					{
+						var iLeft = (screen.width - iWidth) / 2;
+						var iTop = (screen.height - iHeight) / 2;
+					}
+					else
+					{
+						var iLeft = '';
+						var iTop = '';
+					}
+					
+					scrollBars = ',scrollbars=yes';
+					
+					if (bScroll == false){
+						scrollBars = '';
+					}
+													
+					msg=window.open(sTarget,'popUpWindow','width=' + iWidth + ',height=' + iHeight + ',left=' + iLeft + ',top=' + iTop + scrollBars + ',status=no' + ',resizable=yes');
+					
+					if (!LibertyWindow.opener) LibertyWindow.opener = self;
+				}
+			}
+			
+			function resetForm(){
+				document.forms[0].reset();
+			}	
+			
+			function fnTrapKD(btn){
+				if (document.all){
+					if (event.keyCode == 13){
+						event.returnValue=false;
+						event.cancel = true;
+						btn.click();
+					}
+				}
+			}
+	
+			document.onkeydown = function(){
+				if ((event.srcElement.type != "textarea") && (event.srcElement.type != "image")) {
+					if(window.event.keyCode==13) return false
+				}
+			}
+
+		
+			function disableEnterKey(){ 
+		   		if (window.event.keyCode == 13){ 
+		   		return false;
+		   		}
+			} 
+			
+			
+			function setFocusUC(controlName)
+			{
+				var control = document.getElementById(controlName);
+				
+				if( control != null )
+				{
+					control.focus();
+				}
+			}
+			
+			function setFocus(controlName)
+			{
+				var control = document.getElementById(controlName);
+				
+				if( control != null )
+				{
+					control.focus();
+					return true;
+				}
+				else
+				{
+					return false;
+				}
+			}
+			
+			function removeAC(cNum){
+				aCompanies = document.forms[0].amalgamatedCompanies.value.split(",");
+				document.forms[0].amalgamatedCompanies.value = "";
+		
+				for (com in aCompanies){
+					if (aCompanies[com] != ("z" + cNum)){
+						if (document.forms[0].amalgamatedCompanies.value == ""){
+							document.forms[0].amalgamatedCompanies.value = aCompanies[com];
+						} else {
+							document.forms[0].amalgamatedCompanies.value += "," + aCompanies[com];
+						}
+					}
+				}
+		
+				document.forms[0].submit();
+			}
+			
+			function submitFormFirstTime(){
+				var returnSubmit = alreadySubmitted;
+				alreadySubmitted = true;
+				
+				return !returnSubmit;
+				
+			}
+			
+			function waitCursor()
+			{
+				document.body.style.cursor = "wait";
+			}
+			
+			function defaultCursor()
+			{
+				document.body.style.cursor = "default";
+			}
+		
+			</script>
+			<script language="javascript">
+<!--
+
+function HandleOnClose() {
+   if (event.clientY < 0 || event.clientX < 0) {
+	if (event.clientY < -90) {
+	  if (event.clientY > -115)
+	  {
+       
+       //var answer = confirm("");
+       
+        //event.cancelBubble = !answer;
+        event.returnValue = "Are you sure you want to close this window? \nIf so, please ensure you logout correctly before closing the window. \nFailing to logout correctly could result in your account getting  locked for 30 minutes";
+       
+       
+      
+      }
+     }
+   }
+}
+
+//-->
+			</script>
+		<!--<BODY onbeforeunload="HandleOnClose()">-->
+	</HEAD>
+	<body>
+		<div id="gnltop">
+			<div id="gnltopnav">
+				<div id="gnllogo"><span class="hidden">Government of Newfoundland and Labrador</span></div>
+				<ul id="Header1_ulTopNavigation">
+					<li>
+						
+					<li>
+						
+					<LI>
+						&nbsp;</LI>
+				</ul>
+				
+			</div>
+		</div>
+		<div id="gnlhead">
+			<div id="gnldeptitle"><h2></h2>
+			</div>
+		</div>
+		<DIV id="gnlusers">
+			<table id="Header1_pnlNavigation" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td>
+	
+				<UL id="Header1_ulNavigation">
+					<LI>
+						<a id="Header1_lnkMain" href="/CadoInternet/Main.aspx">Main</a>
+					<LI>
+						<a id="Header1_lnkCompanies" href="/CadoInternet/Company/CompanyMain.aspx">Companies</a>
+					<LI>
+						<a id="Header1_lnkCondos" href="/CadoInternet/Company/CondoMain.aspx">Condominiums</a>
+					<LI>
+						<a id="Header1_lnkCoops" href="/CadoInternet/Company/CoopMain.aspx">Co-operatives</a>
+					<LI>
+						<a id="Header1_lnkDeeds" href="/CadoInternet/Deeds/DeedsMain.aspx">Deeds</a>
+					<LI>
+						<a id="Header1_lnkMechanics" href="/CadoInternet/MechanicsLiens/MechanicsMain.aspx">Mechanics Liens</a>
+					<LI class="lastitem">
+						<a id="Header1_lnkLobbyists" href="/CadoInternet/Lobbyist/Menu.aspx">Lobbyists</a></LI></UL>				
+			
+</td></tr></table>
+			<font style="FONT-SIZE:16pt;FONT-FAMILY:Arial;WHITE-SPACE:nowrap">&nbsp; 
+				&nbsp;Companies and Deeds Online - CADO</font>
+		</DIV>
+		<br>
+	</body>
+</HTML>
+
+	<table cellSpacing="0" cellPadding="0" width="740" align="center" border="0">
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr class="bluebar">
+			<td class="bluebartext">&nbsp;Error Page</td>
+		</tr>
+	</table>
+	<table cellSpacing="0" cellPadding="0" width="740" align="center" border="0">
+		<tr class="row">
+			<td vAlign="top" align="left" width="740">
+				<table borderColor="#003c74" cellSpacing="0" cellPadding="0" width="740" bgColor="#ffffff"
+					border="1">
+					<tr class="row">
+						<td vAlign="top" align="left" height="145">
+							<table height="145" cellSpacing="0" cellPadding="3" border="0">
+								<tr class="row">
+									<td vAlign="top" align="left"><IMG height="132" src="../images/spacer.gif" width="7" border="0"></td>
+									<td vAlign="top" align="left">An error has occured while processing your document. 
+										Please click the 'Return' button to go back to the previous data entry page and 
+										try to submit the page again.
+										<p>If you have entered text on the page, please verify that the '&lt;' or '&gt;' 
+											symbols are not included in the text. These will have to be removed before 
+											continuing.</p>
+										<p>If the problem persists, please contact the Registry at 709-729-3317 or by email 
+											at info.gsl@gov.nl.ca to report your problem.</p>
+									</td>
+								</tr>
+								<tr class="row">
+									<td align="right" colSpan="2"><a href="InternetUserMain.aspx"><img src="Images/b_return.gif" border="0"></a></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+<!-- START OF FOOTER -->
+<br>
+<div id="gnlfoot">
+
+	<ul id="gnlfootlinks">
+	<li><a href="/CadoInternet/Disclaimer.aspx">Disclaimer/Privacy</a></li>
+	<li><a href="/CadoInternet/Main.aspx">Home</a></li>
+	<!--<li><a href="http://www.gs.gov.nl.ca/cca/cr/locations.stm">Contact</a></li>-->
+	<!--<li><a href="http://www.gs.gov.nl.ca/department/contact.html#locations">Contact</a></li>-->
+	<li><a href="https://www.servicenl.gov.nl.ca/department/registries_contact.html" target="_blank">Contact</a></li>
+	<!--<li><a href="http://www.gov.nl.ca">Government Home </a></li>-->
+	</ul>
+
+	<div id="gnlcopyright">
+		This page and all contents are copyright, Government of Newfoundland and Labrador, all rights reserved.
+	</div>
+
+</div><!--for gnlfoot-->
+
+
+</body>
+
+</html>
+</form>
